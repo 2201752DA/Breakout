@@ -37,3 +37,8 @@ fire ball (green)
 
 
 
+fixed circular dependency - 25mins
+added progress bar ui - 30 mins
+added speedboost for paddle - 30 mins
+added new powerup - 50 mins
+

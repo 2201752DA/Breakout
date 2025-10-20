@@ -37,7 +37,3 @@ fire ball (green)
 
 
 
-19:00 - 19:25, fixed game not compiling
-
-19:35 - 20:00, added speedboost key
-

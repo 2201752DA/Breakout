@@ -1,5 +1,5 @@
 #include <sstream>
-
+#include <iostream>
 #include "UI.h"
 #include "GameManager.h"
 #include <iomanip>
@@ -80,6 +80,13 @@ void UI::updatePowerupText(std::pair<POWERUPS, float> powerup)
 		//oss << std::fixed << std::setprecision(2) << powerup.second;
 		_powerupText.setString("fire");
 		_powerupText.setFillColor(extraBallEffectsColour);
+		_progressBarBack.setFillColor(sf::Color::Cyan);
+		_progressBarFill.setSize(sf::Vector2(390.f * (powerup.second / 5.0f), 10.f));
+		_progressBarFill.setFillColor(sf::Color::Red);
+		break;
+	case bigBall:
+		_powerupText.setString("big ball");
+		_powerupText.setFillColor(ballEffectsColour);
 		_progressBarBack.setFillColor(sf::Color::Cyan);
 		_progressBarFill.setSize(sf::Vector2(390.f * (powerup.second / 5.0f), 10.f));
 		_progressBarFill.setFillColor(sf::Color::Red);

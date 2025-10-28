@@ -25,7 +25,8 @@ void Ball::update(float dt)
     {
         if (_velocity != VELOCITY)
             _velocity = VELOCITY;   // reset speed.
-        else if (_size != RADIUS)
+        
+        if (_size != RADIUS)
         {
             _size = RADIUS; // reset size.
             _sprite.setRadius(_size);

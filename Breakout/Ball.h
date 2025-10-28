@@ -23,7 +23,6 @@ private:
     float _velocity;
     bool _isAlive;
     bool _isFireBall;
-    bool _isBigBall;
     float _timeWithPowerupEffect;
 
     GameManager* _gameManager;  // Reference to the GameManager

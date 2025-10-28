@@ -91,9 +91,15 @@ void UI::updatePowerupText(std::pair<POWERUPS, float> powerup)
 		_progressBarFill.setSize(sf::Vector2(390.f * (powerup.second / 5.0f), 10.f));
 		_progressBarFill.setFillColor(sf::Color::Red);
 		break;
+	case smallBall:
+		_powerupText.setString("small ball");
+		_powerupText.setFillColor(ballEffectsColour);
+		_progressBarBack.setFillColor(sf::Color::Cyan);
+		_progressBarFill.setSize(sf::Vector2(390.f * (powerup.second / 5.0f), 10.f));
+		_progressBarFill.setFillColor(sf::Color::Red);
+		break;
 	case none:
 		_powerupText.setString("");
-		
 		_progressBarBack.setFillColor(sf::Color::Transparent);
 		_progressBarFill.setFillColor(sf::Color::Transparent);
 		break;
